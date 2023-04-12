@@ -13,6 +13,10 @@
 		74BBD9DD29CCD60500CC7A7B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74BBD9DB29CCD60500CC7A7B /* Main.storyboard */; };
 		74BBD9DF29CCD60800CC7A7B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 74BBD9DE29CCD60800CC7A7B /* Assets.xcassets */; };
 		74BBD9E229CCD60800CC7A7B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74BBD9E029CCD60800CC7A7B /* LaunchScreen.storyboard */; };
+		F80D3D7F29E7058E00B752FB /* TipCalculatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F80D3D7E29E7058E00B752FB /* TipCalculatorViewController.swift */; };
+		F80D3D8129E705A800B752FB /* StandardConversionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F80D3D8029E705A800B752FB /* StandardConversionsViewController.swift */; };
+		F80D3D8329E705D200B752FB /* TrigonometryCalculatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F80D3D8229E705D200B752FB /* TrigonometryCalculatorViewController.swift */; };
+		F80D3D8529E705EE00B752FB /* BasicCalculatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F80D3D8429E705EE00B752FB /* BasicCalculatorViewController.swift */; };
 		F83EEEC129E6325600196103 /* osu-brand-primary-full.png in Resources */ = {isa = PBXBuildFile; fileRef = F83EEEC029E6325600196103 /* osu-brand-primary-full.png */; };
 /* End PBXBuildFile section */
 
@@ -25,6 +29,10 @@
 		74BBD9DE29CCD60800CC7A7B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		74BBD9E129CCD60800CC7A7B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		74BBD9E329CCD60800CC7A7B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F80D3D7E29E7058E00B752FB /* TipCalculatorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipCalculatorViewController.swift; sourceTree = "<group>"; };
+		F80D3D8029E705A800B752FB /* StandardConversionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StandardConversionsViewController.swift; sourceTree = "<group>"; };
+		F80D3D8229E705D200B752FB /* TrigonometryCalculatorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrigonometryCalculatorViewController.swift; sourceTree = "<group>"; };
+		F80D3D8429E705EE00B752FB /* BasicCalculatorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicCalculatorViewController.swift; sourceTree = "<group>"; };
 		F83EEEC029E6325600196103 /* osu-brand-primary-full.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "osu-brand-primary-full.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -62,6 +70,10 @@
 				74BBD9D729CCD60500CC7A7B /* SceneDelegate.swift */,
 				74BBD9D929CCD60500CC7A7B /* ViewController.swift */,
 				74BBD9DB29CCD60500CC7A7B /* Main.storyboard */,
+				F80D3D8429E705EE00B752FB /* BasicCalculatorViewController.swift */,
+				F80D3D8229E705D200B752FB /* TrigonometryCalculatorViewController.swift */,
+				F80D3D8029E705A800B752FB /* StandardConversionsViewController.swift */,
+				F80D3D7E29E7058E00B752FB /* TipCalculatorViewController.swift */,
 				74BBD9DE29CCD60800CC7A7B /* Assets.xcassets */,
 				F83EEEC029E6325600196103 /* osu-brand-primary-full.png */,
 				74BBD9E029CCD60800CC7A7B /* LaunchScreen.storyboard */,
@@ -143,8 +155,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				74BBD9DA29CCD60500CC7A7B /* ViewController.swift in Sources */,
+				F80D3D8529E705EE00B752FB /* BasicCalculatorViewController.swift in Sources */,
 				74BBD9D629CCD60500CC7A7B /* AppDelegate.swift in Sources */,
 				74BBD9D829CCD60500CC7A7B /* SceneDelegate.swift in Sources */,
+				F80D3D8329E705D200B752FB /* TrigonometryCalculatorViewController.swift in Sources */,
+				F80D3D7F29E7058E00B752FB /* TipCalculatorViewController.swift in Sources */,
+				F80D3D8129E705A800B752FB /* StandardConversionsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -303,7 +319,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "anthony.r.horinek-OSU.Team_Goldfish";
+				PRODUCT_BUNDLE_IDENTIFIER = "anthony.r.horinek-OSU.TeamGoldfish";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -330,7 +346,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "anthony.r.horinek-OSU.Team_Goldfish";
+				PRODUCT_BUNDLE_IDENTIFIER = "anthony.r.horinek-OSU.TeamGoldfish";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
