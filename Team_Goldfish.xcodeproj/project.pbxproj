@@ -17,6 +17,12 @@
 		F80D3D8129E705A800B752FB /* StandardConversionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F80D3D8029E705A800B752FB /* StandardConversionsViewController.swift */; };
 		F80D3D8329E705D200B752FB /* TrigonometryCalculatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F80D3D8229E705D200B752FB /* TrigonometryCalculatorViewController.swift */; };
 		F80D3D8529E705EE00B752FB /* BasicCalculatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F80D3D8429E705EE00B752FB /* BasicCalculatorViewController.swift */; };
+		F831B63B29E77E9400DCED5F /* LengthConversionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F831B63A29E77E9400DCED5F /* LengthConversionsViewController.swift */; };
+		F831B63D29E7814C00DCED5F /* AreaConversionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F831B63C29E7814C00DCED5F /* AreaConversionsViewController.swift */; };
+		F831B63F29E782ED00DCED5F /* VolumeConversionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F831B63E29E782ED00DCED5F /* VolumeConversionsViewController.swift */; };
+		F831B64129E7830100DCED5F /* SpeedConversionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F831B64029E7830100DCED5F /* SpeedConversionsViewController.swift */; };
+		F831B64329E7831400DCED5F /* TimeConversionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F831B64229E7831400DCED5F /* TimeConversionsViewController.swift */; };
+		F831B64529E7832700DCED5F /* WeightConversionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F831B64429E7832700DCED5F /* WeightConversionsViewController.swift */; };
 		F83EEEC129E6325600196103 /* osu-brand-primary-full.png in Resources */ = {isa = PBXBuildFile; fileRef = F83EEEC029E6325600196103 /* osu-brand-primary-full.png */; };
 /* End PBXBuildFile section */
 
@@ -33,6 +39,12 @@
 		F80D3D8029E705A800B752FB /* StandardConversionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StandardConversionsViewController.swift; sourceTree = "<group>"; };
 		F80D3D8229E705D200B752FB /* TrigonometryCalculatorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrigonometryCalculatorViewController.swift; sourceTree = "<group>"; };
 		F80D3D8429E705EE00B752FB /* BasicCalculatorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicCalculatorViewController.swift; sourceTree = "<group>"; };
+		F831B63A29E77E9400DCED5F /* LengthConversionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LengthConversionsViewController.swift; sourceTree = "<group>"; };
+		F831B63C29E7814C00DCED5F /* AreaConversionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AreaConversionsViewController.swift; sourceTree = "<group>"; };
+		F831B63E29E782ED00DCED5F /* VolumeConversionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VolumeConversionsViewController.swift; sourceTree = "<group>"; };
+		F831B64029E7830100DCED5F /* SpeedConversionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeedConversionsViewController.swift; sourceTree = "<group>"; };
+		F831B64229E7831400DCED5F /* TimeConversionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeConversionsViewController.swift; sourceTree = "<group>"; };
+		F831B64429E7832700DCED5F /* WeightConversionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeightConversionsViewController.swift; sourceTree = "<group>"; };
 		F83EEEC029E6325600196103 /* osu-brand-primary-full.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "osu-brand-primary-full.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -70,6 +82,12 @@
 				74BBD9D729CCD60500CC7A7B /* SceneDelegate.swift */,
 				74BBD9D929CCD60500CC7A7B /* ViewController.swift */,
 				74BBD9DB29CCD60500CC7A7B /* Main.storyboard */,
+				F831B64429E7832700DCED5F /* WeightConversionsViewController.swift */,
+				F831B64029E7830100DCED5F /* SpeedConversionsViewController.swift */,
+				F831B64229E7831400DCED5F /* TimeConversionsViewController.swift */,
+				F831B63E29E782ED00DCED5F /* VolumeConversionsViewController.swift */,
+				F831B63C29E7814C00DCED5F /* AreaConversionsViewController.swift */,
+				F831B63A29E77E9400DCED5F /* LengthConversionsViewController.swift */,
 				F80D3D8429E705EE00B752FB /* BasicCalculatorViewController.swift */,
 				F80D3D8229E705D200B752FB /* TrigonometryCalculatorViewController.swift */,
 				F80D3D8029E705A800B752FB /* StandardConversionsViewController.swift */,
@@ -154,12 +172,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F831B64529E7832700DCED5F /* WeightConversionsViewController.swift in Sources */,
+				F831B63F29E782ED00DCED5F /* VolumeConversionsViewController.swift in Sources */,
+				F831B64129E7830100DCED5F /* SpeedConversionsViewController.swift in Sources */,
 				74BBD9DA29CCD60500CC7A7B /* ViewController.swift in Sources */,
 				F80D3D8529E705EE00B752FB /* BasicCalculatorViewController.swift in Sources */,
+				F831B63B29E77E9400DCED5F /* LengthConversionsViewController.swift in Sources */,
 				74BBD9D629CCD60500CC7A7B /* AppDelegate.swift in Sources */,
 				74BBD9D829CCD60500CC7A7B /* SceneDelegate.swift in Sources */,
 				F80D3D8329E705D200B752FB /* TrigonometryCalculatorViewController.swift in Sources */,
 				F80D3D7F29E7058E00B752FB /* TipCalculatorViewController.swift in Sources */,
+				F831B64329E7831400DCED5F /* TimeConversionsViewController.swift in Sources */,
+				F831B63D29E7814C00DCED5F /* AreaConversionsViewController.swift in Sources */,
 				F80D3D8129E705A800B752FB /* StandardConversionsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
