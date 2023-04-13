@@ -13,6 +13,7 @@
 		74BBD9DD29CCD60500CC7A7B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74BBD9DB29CCD60500CC7A7B /* Main.storyboard */; };
 		74BBD9DF29CCD60800CC7A7B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 74BBD9DE29CCD60800CC7A7B /* Assets.xcassets */; };
 		74BBD9E229CCD60800CC7A7B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74BBD9E029CCD60800CC7A7B /* LaunchScreen.storyboard */; };
+		F80799D929E78E920030D70A /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = F80799D829E78E920030D70A /* .gitignore */; };
 		F80D3D7F29E7058E00B752FB /* TipCalculatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F80D3D7E29E7058E00B752FB /* TipCalculatorViewController.swift */; };
 		F80D3D8129E705A800B752FB /* StandardConversionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F80D3D8029E705A800B752FB /* StandardConversionsViewController.swift */; };
 		F80D3D8329E705D200B752FB /* TrigonometryCalculatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F80D3D8229E705D200B752FB /* TrigonometryCalculatorViewController.swift */; };
@@ -35,6 +36,7 @@
 		74BBD9DE29CCD60800CC7A7B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		74BBD9E129CCD60800CC7A7B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		74BBD9E329CCD60800CC7A7B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F80799D829E78E920030D70A /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		F80D3D7E29E7058E00B752FB /* TipCalculatorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipCalculatorViewController.swift; sourceTree = "<group>"; };
 		F80D3D8029E705A800B752FB /* StandardConversionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StandardConversionsViewController.swift; sourceTree = "<group>"; };
 		F80D3D8229E705D200B752FB /* TrigonometryCalculatorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrigonometryCalculatorViewController.swift; sourceTree = "<group>"; };
@@ -62,6 +64,7 @@
 		74BBD9C929CCD60500CC7A7B = {
 			isa = PBXGroup;
 			children = (
+				F80799D829E78E920030D70A /* .gitignore */,
 				74BBD9D429CCD60500CC7A7B /* Team_Goldfish */,
 				74BBD9D329CCD60500CC7A7B /* Products */,
 			);
@@ -158,6 +161,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F80799D929E78E920030D70A /* .gitignore in Resources */,
 				74BBD9E229CCD60800CC7A7B /* LaunchScreen.storyboard in Resources */,
 				F83EEEC129E6325600196103 /* osu-brand-primary-full.png in Resources */,
 				74BBD9DF29CCD60800CC7A7B /* Assets.xcassets in Resources */,
