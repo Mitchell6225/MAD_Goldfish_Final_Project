@@ -25,6 +25,7 @@
 		F831B64329E7831400DCED5F /* TimeConversionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F831B64229E7831400DCED5F /* TimeConversionsViewController.swift */; };
 		F831B64529E7832700DCED5F /* WeightConversionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F831B64429E7832700DCED5F /* WeightConversionsViewController.swift */; };
 		F83EEEC129E6325600196103 /* osu-brand-primary-full.png in Resources */ = {isa = PBXBuildFile; fileRef = F83EEEC029E6325600196103 /* osu-brand-primary-full.png */; };
+		F8AFA40729F09CF900A2B76C /* appstore.png in Resources */ = {isa = PBXBuildFile; fileRef = F8AFA40629F09CF900A2B76C /* appstore.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +49,7 @@
 		F831B64229E7831400DCED5F /* TimeConversionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeConversionsViewController.swift; sourceTree = "<group>"; };
 		F831B64429E7832700DCED5F /* WeightConversionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeightConversionsViewController.swift; sourceTree = "<group>"; };
 		F83EEEC029E6325600196103 /* osu-brand-primary-full.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "osu-brand-primary-full.png"; sourceTree = "<group>"; };
+		F8AFA40629F09CF900A2B76C /* appstore.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = appstore.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +98,7 @@
 				F80D3D8029E705A800B752FB /* StandardConversionsViewController.swift */,
 				F80D3D7E29E7058E00B752FB /* TipCalculatorViewController.swift */,
 				74BBD9DE29CCD60800CC7A7B /* Assets.xcassets */,
+				F8AFA40629F09CF900A2B76C /* appstore.png */,
 				F83EEEC029E6325600196103 /* osu-brand-primary-full.png */,
 				74BBD9E029CCD60800CC7A7B /* LaunchScreen.storyboard */,
 				74BBD9E329CCD60800CC7A7B /* Info.plist */,
@@ -166,6 +169,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F80799D929E78E920030D70A /* .gitignore in Resources */,
+				F8AFA40729F09CF900A2B76C /* appstore.png in Resources */,
 				74BBD9E229CCD60800CC7A7B /* LaunchScreen.storyboard in Resources */,
 				F83EEEC129E6325600196103 /* osu-brand-primary-full.png in Resources */,
 				74BBD9DF29CCD60800CC7A7B /* Assets.xcassets in Resources */,
