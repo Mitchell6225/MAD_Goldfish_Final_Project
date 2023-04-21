@@ -70,9 +70,13 @@ class TrigonometryCalculatorViewController: UIViewController {
     @IBAction func backTapped(_ sender: Any) {
         // If the formula has more that 1 char, remove the last char.
         // Else assign it 0.
+        var pi = false
         var formulaStr = formulaOutput.text
         if (calcStr.last == "n" || calcStr.last == "s" || calcStr.last == "g" || calcStr.last == "t" || calcStr.last == "I") {      //If the user backs up any of the more complicated items this will erase the whole item from both formulaOutput and calcStr
             var count = 0
+            if (calcStr.last == "I") {
+                pi = true
+            }
             var before = true
             while (calcStr.last != "M") {
                 if calcStr.last != "." && before {
@@ -82,10 +86,15 @@ class TrigonometryCalculatorViewController: UIViewController {
                 }
                 calcStr.removeLast()
             }
-            for _ in 1...count {
+            if !pi{
+                for _ in 1...count {
+                    formulaStr!.removeLast()
+
+                }
+            } else {
                 formulaStr!.removeLast()
-                
             }
+            
             formulaOutput.text = formulaStr
             calcStr.removeLast()
         } else if (formulaStr!.last == "^"){
@@ -110,6 +119,7 @@ class TrigonometryCalculatorViewController: UIViewController {
     @IBAction func clearTapped(_ sender: Any) {
         formulaOutput.text = "0"
         resultOutput.text = "0"
+        calcStr = ""
     }
     
     // Evaluate the formula.
