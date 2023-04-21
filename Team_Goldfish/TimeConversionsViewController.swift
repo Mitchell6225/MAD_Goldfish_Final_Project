@@ -100,21 +100,21 @@ extension TimeConversionsViewController: UITextFieldDelegate{
     func checkUnits(inputUnits: String){
         switch inputUnits{
             // Metric
-        case "Minutes" : // Minutes
+        case "Minutes" , "minutes", "Minute", "minute", "min", "Min", "M", "m": // Minutes
             tempQuantity = quantity * 60
-        case "Hours":
+        case "Hours", "Hour", "hours", "hour", "hr", "Hr":
             tempQuantity = quantity * 3600
-        case "Days": // Minutes
+        case "Days", "days", "day", "Day", "D", "d": // Minutes
             tempQuantity = quantity * 86400
-        case "Weeks":
+        case "Weeks", "weeks", "Week", "week", "Wk", "wk":
             tempQuantity = quantity * 604800
-        case "Months": // Minutes
+        case "Months", "months", "Month", "month", "Mo", "mo": // Minutes
             tempQuantity = quantity * (86400 * 30)
-        case "Years":
+        case "Years", "years", "Year", "year", "Yr", "yr":
             tempQuantity = quantity * (86400 * 365)
-        case "Decades": // Minutes
+        case "Decades", "decades", "Decade", "decade": // Minutes
             tempQuantity = quantity * ((86400 * 365) * 10)
-        case "Centurys":
+        case "Centurys", "centurys", "Century", "centruy", "c", "C":
             tempQuantity = quantity * ((86400 * 365) * 100)
 
             // Base unit of seconds
