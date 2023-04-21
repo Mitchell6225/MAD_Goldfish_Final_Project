@@ -30,6 +30,10 @@ class TipCalculatorViewController: UIViewController {
         tip20.text = "$\(amountSpent * 0.20)"
         tip25.text = "$\(amountSpent * 0.25)"
         tipCustom.text = "$\(amountSpent * (customTip * 0.01))"
+
+        if customTipTextField.text!.isEmpty {
+            customTipTextField.text = "Input"
+        }
     }
     
     func formatText(currentText: String, symbol: Character) -> String{
