@@ -7,11 +7,13 @@
 
 import UIKit
 import JavaScriptCore
+
 func evaluateMathExpression(_ expression: String) -> Double? {              //Allow use of evaluateScript in file
     let context = JSContext()
     let result = context?.evaluateScript(expression)
     return result?.toDouble()
 }
+
 extension JSValue {                                 //Make toDouble work by using .doubleValue
     func toDouble() -> Double? {
         return toNumber()?.doubleValue

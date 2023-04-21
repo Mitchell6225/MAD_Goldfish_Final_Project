@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import JavaScriptCore
 
 class BasicCalculatorViewController: UIViewController {
     
@@ -41,11 +42,10 @@ class BasicCalculatorViewController: UIViewController {
     
     // Evaluate the formula.
     @IBAction func evaluateTapped(_ sender: Any) {
-        // Create the math expression using the formulaOutput label.
-        let mathExpression: NSExpression = NSExpression(format: formulaOutput.text!)
-        // Storing the result from evaluating the expression.
-        let result: Double = mathExpression.expressionValue(with:nil, context: nil) as! Double
-        resultOutput.text = "\(result)"
+        // Evaluate the math expression using the formulaOutput label.
+        let result = evaluateMathExpression(formulaOutput.text!)
+        //Calculate the answer to the formula output and input to result output
+        resultOutput.text = String(format: "%f", result!)
     }
     
     /*
