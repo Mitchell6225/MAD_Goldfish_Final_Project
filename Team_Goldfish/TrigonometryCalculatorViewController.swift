@@ -7,7 +7,11 @@
 
 import UIKit
 import JavaScriptCore
-
+extension StringProtocol {
+    subscript(offset: Int) -> Character {
+        self[index(startIndex, offsetBy: offset)]
+    }
+}
 func evaluateMathExpression(_ expression: String) -> Double? {              //Allow use of evaluateScript in file
     let context = JSContext()
     let result = context?.evaluateScript(expression)
@@ -33,6 +37,16 @@ class TrigonometryCalculatorViewController: UIViewController {
         
     }
     
+    @IBAction func buttonTappedLN(_ sender: Any) {
+        calcStr += "Math.log"
+        if(formulaOutput.text == "0"){
+            formulaOutput.text = "ln"     //add the button label to the formula output
+        }
+        else {
+            formulaOutput.text! += "ln"
+                    
+        }
+    }
     
     // Number/Symbol button functionality.
     @IBAction func buttonTapped2(_ sender: UIButton) {
@@ -73,30 +87,41 @@ class TrigonometryCalculatorViewController: UIViewController {
         // If the formula has more that 1 char, remove the last char.
         // Else assign it 0.
         var pi = false
+        var log = true
+        var ln = false
         var formulaStr = formulaOutput.text
-        if (calcStr.last == "n" || calcStr.last == "s" || calcStr.last == "g" || calcStr.last == "t" || calcStr.last == "I") {      //If the user backs up any of the more complicated items this will erase the whole item from both formulaOutput and calcStr
+        if (calcStr.last == "n" || calcStr.last == "s" || calcStr.last == "g" || calcStr.last == "t" || calcStr.last == "I" || calcStr.last == "0") {      //If the user backs up any of the more complicated items this will erase the whole item from both formulaOutput and calcStr
             var count = 0
-            if (calcStr.last == "I") {
-                pi = true
+            if (calcStr.last == "0" && calcStr[calcStr.count - 3] != "g") {
+                formulaStr!.removeLast()
+                log = false
             }
-            var before = true
-            while (calcStr.last != "M") {
-                if calcStr.last != "." && before {
-                    count += 1
-                } else {
-                    before = false
+            if (calcStr.last == "g") {
+                ln = true
+            }
+            if log {
+                if (calcStr.last == "I") {
+                    pi = true
                 }
-                calcStr.removeLast()
-            }
-            if !pi{
+                var before = true
+                while (calcStr.last != "M") {
+                    if calcStr.last != "." && before {
+                        count += 1
+                    } else {
+                        before = false
+                    }
+                    calcStr.removeLast()
+                }
+                if pi{
+                    count = 1
+                } else if (ln){
+                    count = 2
+                }
                 for _ in 1...count {
                     formulaStr!.removeLast()
-
                 }
-            } else {
-                formulaStr!.removeLast()
+                        
             }
-            
             formulaOutput.text = formulaStr
             calcStr.removeLast()
         } else if (formulaStr!.last == "^"){
@@ -114,6 +139,9 @@ class TrigonometryCalculatorViewController: UIViewController {
             if calcStr != "" {
                 calcStr.removeLast()
             }
+        }
+        if (formulaStr == "") {
+            formulaOutput.text = "0"
         }
     }
     

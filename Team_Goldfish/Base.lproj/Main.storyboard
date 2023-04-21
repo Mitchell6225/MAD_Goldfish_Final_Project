@@ -271,10 +271,11 @@ Calculator</string>
                                 <rect key="frame" x="90" y="363" width="65" height="65"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="log">
+                                <buttonConfiguration key="configuration" style="plain" title="log10">
                                     <backgroundConfiguration key="background">
                                         <color key="backgroundColor" name="OSU Orange"/>
                                     </backgroundConfiguration>
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="16"/>
                                     <color key="baseForegroundColor" systemColor="systemBackgroundColor"/>
                                 </buttonConfiguration>
                                 <connections>
@@ -488,7 +489,7 @@ Calculator</string>
                                     <color key="baseForegroundColor" systemColor="systemBackgroundColor"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <action selector="buttonTapped2:" destination="Eyb-aa-3xw" eventType="touchUpInside" id="g2v-yq-wNq"/>
+                                    <action selector="buttonTappedLN:" destination="Eyb-aa-3xw" eventType="touchUpInside" id="ZrU-NO-UMe"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f0C-nv-Ggu">
