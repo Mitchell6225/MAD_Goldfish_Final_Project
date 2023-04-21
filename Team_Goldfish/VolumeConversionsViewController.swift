@@ -9,21 +9,23 @@ import UIKit
 
 class VolumeConversionsViewController: UIViewController {
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+    // Text Fields
+    @IBAction func quantityTextField(_ sender: Any) {
     }
     
+    //Labels metric
+    
+    //Labels English
+    
+    // Input variables
+    var quantity: Double = 0.0
+    var tempQuantity: Double = 0.0
+    var units: String = ""
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        // Do any additional setup after loading the view.
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
     }
-    */
 
 }

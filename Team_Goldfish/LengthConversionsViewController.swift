@@ -84,7 +84,7 @@ extension LengthConversionsViewController: UITextFieldDelegate{
         }
         
         if textField == unitTextField{
-            let allowedcharacters = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+            let allowedcharacters = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ "
             let allowedcharactersSet = CharacterSet(charactersIn: allowedcharacters)
             let typedCharactersetIn = CharacterSet(charactersIn: string)
             let letters = allowedcharactersSet.isSuperset(of: typedCharactersetIn)
@@ -130,41 +130,41 @@ extension LengthConversionsViewController: UITextFieldDelegate{
     func checkUnits(inputUnits: String){
         switch inputUnits{
             // Metric
-        case "M" : //Mega meters
+        case "M", "Mm", "Mega Meters", "Mega meters", "mega meters" : //Mega meters
             tempQuantity = quantity * 1000000
-        case "k" : // Kilo meters
+        case "k", "km", "Kilo Meters", "Kilo meters", "kilo meters" : // Kilo meters
             tempQuantity = quantity * 1000
-        case "h" : // Hecto meters
+        case "h", "hm", "Hecto Meters", "Hecto meters", "hecto meters" : // Hecto meters
             tempQuantity = quantity * 100
-        case "da" : // Deca meters
+        case "da", "dam", "Deka Meters", "Deka meters", "deka meters" : // Deca meters
             tempQuantity = quantity * 10
-        case "d" : // deci meters
+        case "d", "dm", "Deci Meters", "Deci meters", "deci meters" : // deci meters
             tempQuantity = quantity * 0.1
-        case "c" : // centi meters
+        case "c", "cm", "Centi Meters", "Centi meters", "centi meters" : // centi meters
             tempQuantity = quantity * 0.01
-        case "m" : // milli meters
+        case "m", "mm", "Milli Meters", "Milli meters", "milli meters" : // milli meters
             tempQuantity = quantity * 0.001
-        case "u" : // micro meters
+        case "u", "um", "Micro Meters", "Micro meters", "micro meters" : // micro meters
             tempQuantity = quantity * 0.000001
-        case "n" : // nano meters
+        case "n", "nm", "Nano Meters", "Nano meters", "nano meters" : // nano meters
             tempQuantity = quantity * 0.000000001
             
             // English units
-        case "in": // inches
+        case "in", "Inch", "inch", "Inches", "inches": // inches
             tempQuantity = quantity * 0.0254
-        case "ft": // feet
+        case "ft", "Feet", "feet", "Foot", "foot": // feet
             tempQuantity = quantity * 0.3048
-        case "yd": // yards
+        case "yd", "Yard", "yard", "Yards", "yards": // yards
             tempQuantity = quantity * 0.9144
-        case "rod": // rods
+        case "rod", "Rod", "rods", "Rods": // rods
             tempQuantity = quantity * 5.0292
-        case "chain": // chains
+        case "chain", "Chain", "chains", "Chains": // chains
             tempQuantity = quantity * 20.1168
-        case "furlong": // furlongs
+        case "furlong", "Fulong", "furlongs", "Furlongs": // furlongs
             tempQuantity = quantity * 201.168
-        case "mi": // miles
+        case "mi", "Mile", "mile", "Miles", "miles": // miles
             tempQuantity = quantity * 1609.34
-        case "NM": // nautical miles
+        case "NM", "Nautical Mile", "Nautical mile", "nautical mile", "Nautical Miles", "Nautical miles", "nautical miles": // nautical miles
             tempQuantity = quantity * 1852
             
             // Metric Base unit meters
