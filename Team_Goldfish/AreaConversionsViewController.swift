@@ -49,26 +49,26 @@ class AreaConversionsViewController: UIViewController {
         unitTextField.delegate = self
         quantityTextField.delegate = self
         
-        mega.text = "\(quantity)"
-        kilo.text = "\(quantity)"
-        hecto.text = "\(quantity)"
-        deka.text = "\(quantity)"
-        baseUnits.text = "\(quantity)"
-        deci.text = "\(quantity)"
-        centi.text = "\(quantity)"
-        milli.text = "\(quantity)"
-        micro.text = "\(quantity)"
-        nano.text = "\(quantity)"
+        mega.text = "Megameters"
+        kilo.text = "Kilometers"
+        hecto.text = "Hectometers"
+        deka.text = "Dekameters"
+        baseUnits.text = "Meters"
+        deci.text = "Decimeters"
+        centi.text = "Centimeter"
+        milli.text = "Millimeter"
+        micro.text = "Micrometer"
+        nano.text = "Nanometer"
         
-        inches.text = "\(quantity)"
-        feet.text = "\(quantity)"
-        yards.text = "\(quantity)"
-        rods.text = "\(quantity)"
-        acres.text = "\(quantity)"
-        chains.text = "\(quantity)"
-        furlongs.text = "\(quantity)"
-        miles.text = "\(quantity)"
-        nauticalMiles.text = "\(quantity)"
+        inches.text = "Inches"
+        feet.text = "Feet"
+        yards.text = "Yards"
+        rods.text = "Rods"
+        acres.text = "Acres"
+        chains.text = "Chains"
+        furlongs.text = "Furlongs"
+        miles.text = "Miles"
+        nauticalMiles.text = "Nautical Miles"
     }
     
 }
@@ -146,7 +146,7 @@ extension AreaConversionsViewController: UITextFieldDelegate{
             tempQuantity = quantity * 0.1
         case "c", "cm", "Centi Meters", "Centi meters", "centi meters" : // centi meters
             tempQuantity = quantity * 0.01
-        case "m", "mm", "Milli Meters", "Milli meters", "milli meters" : // milli meters
+        case "mm", "Milli Meters", "Milli meters", "milli meters" : // milli meters
             tempQuantity = quantity * 0.001
         case "u", "um", "Micro Meters", "Micro meters", "micro meters" : // micro meters
             tempQuantity = quantity * 0.000001

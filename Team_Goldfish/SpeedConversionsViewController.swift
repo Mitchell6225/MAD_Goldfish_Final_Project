@@ -48,25 +48,25 @@ class SpeedConversionsViewController: UIViewController {
         unitTextField.delegate = self
         quantityTextField.delegate = self
         
-        mega.text = "\(quantity)"
-        kilo.text = "\(quantity)"
-        hecto.text = "\(quantity)"
-        deka.text = "\(quantity)"
-        baseUnits.text = "\(quantity)"
-        deci.text = "\(quantity)"
-        centi.text = "\(quantity)"
-        milli.text = "\(quantity)"
-        micro.text = "\(quantity)"
-        nano.text = "\(quantity)"
+        mega.text = "Megameters"
+        kilo.text = "Kilometers"
+        hecto.text = "Hectometers"
+        deka.text = "Dekameters"
+        baseUnits.text = "Meters"
+        deci.text = "Decimeters"
+        centi.text = "Centimeter"
+        milli.text = "Millimeter"
+        micro.text = "Micrometer"
+        nano.text = "Nanometer"
         
-        inches.text = "\(quantity)"
-        feet.text = "\(quantity)"
-        yards.text = "\(quantity)"
-        rods.text = "\(quantity)"
-        chains.text = "\(quantity)"
-        furlongs.text = "\(quantity)"
-        miles.text = "\(quantity)"
-        nauticalMiles.text = "\(quantity)"
+        inches.text = "Inches"
+        feet.text = "Feet"
+        yards.text = "Yards"
+        rods.text = "Rods"
+        chains.text = "Chains"
+        furlongs.text = "Furlongs"
+        miles.text = "Miles"
+        nauticalMiles.text = "Nautical Miles"
     }
     
 

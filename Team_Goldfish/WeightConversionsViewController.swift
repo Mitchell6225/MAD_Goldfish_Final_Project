@@ -44,23 +44,23 @@ class WeightConversionsViewController: UIViewController {
         unitTextField.delegate = self
         quantityTextField.delegate = self
         
-        mega.text = "\(quantity)"
-        kilo.text = "\(quantity)"
-        hecto.text = "\(quantity)"
-        deka.text = "\(quantity)"
-        baseUnits.text = "\(quantity)"
-        deci.text = "\(quantity)"
-        centi.text = "\(quantity)"
-        milli.text = "\(quantity)"
-        micro.text = "\(quantity)"
-        nano.text = "\(quantity)"
+        mega.text = "Megagram"
+        kilo.text = "Kilogram"
+        hecto.text = "Hectogram"
+        deka.text = "Dekagram"
+        baseUnits.text = "Gram"
+        deci.text = "Decigram"
+        centi.text = "Centigram"
+        milli.text = "Milligram"
+        micro.text = "Microgram"
+        nano.text = "Nanogram"
 
-        ounces.text = "\(quantity)"
-        pounds.text = "\(quantity)"
-        hwUS.text = "\(quantity)"
-        hwUK.text = "\(quantity)"
-        tonUS.text = "\(quantity)"
-        tonUK.text = "\(quantity)"
+        ounces.text = "Ounces"
+        pounds.text = "Pounds"
+        hwUS.text = "US Hundredweight"
+        hwUK.text = "UK Hundredweight"
+        tonUS.text = "US Ton"
+        tonUK.text = "UK Ton"
     }
 
 }
@@ -123,23 +123,23 @@ extension WeightConversionsViewController: UITextFieldDelegate{
     func checkUnits(inputUnits: String){
         switch inputUnits{
             // Metric
-        case "M", "Mm", "Mega Liters", "Mega liters", "mega liters" : //Mega liters
+        case "M", "Ml", "Mega Grams", "Mega grams", "mega grams" : //Mega liters
             tempQuantity = quantity * 1000000
-        case "k", "km", "Kilo Liters", "Kilo liters", "kilo liters" : // Kilo liters
+        case "k", "kg", "Kilo Grams", "Kilo grams", "kilo grams" : // Kilo liters
             tempQuantity = quantity * 1000
-        case "h", "hm", "Hecto Liters", "Hecto liters", "hecto liters" : // Hecto liters
+        case "h", "hg", "Hecto Grams", "Hecto grams", "hecto grams" : // Hecto liters
             tempQuantity = quantity * 100
-        case "da", "dam", "Deka Liters", "Deka liters", "deka liters" : // Deca liters
+        case "da", "dag", "Deka Grams", "Deka grams", "deka grams" : // Deca liters
             tempQuantity = quantity * 10
-        case "d", "dm", "Deci Liters", "Deci liters", "deci liters" : // deci liters
+        case "d", "dg", "Deci Grams", "Deci grams", "deci grams" : // deci liters
             tempQuantity = quantity * 0.1
-        case "c", "cm", "Centi Liters", "Centi liters", "centi liters" : // centi liters
+        case "c", "cg", "Centi Grams", "Centi grams", "centi grams" : // centi liters
             tempQuantity = quantity * 0.01
-        case "m", "mm", "Milli Liters", "Milli liters", "milli liters" : // milli liters
+        case "m", "mg", "Milli Grams", "Milli grams", "milli grams" : // milli liters
             tempQuantity = quantity * 0.001
-        case "u", "um", "Micro Liters", "Micro liters", "micro liters" : // micro liters
+        case "u", "ug", "Micro Gram", "Micro grams", "micro grams" : // micro liters
             tempQuantity = quantity * 0.000001
-        case "n", "nm", "Nano Liters", "Nano liters", "nano liters" : // nano liters
+        case "n", "ng", "Nano Grams", "Nano grams", "nano grams" : // nano liters
             tempQuantity = quantity * 0.000000001
             
             // English units

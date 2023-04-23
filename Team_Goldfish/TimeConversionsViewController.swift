@@ -36,15 +36,15 @@ class TimeConversionsViewController: UIViewController {
         unitTextField.delegate = self
         quantityTextField.delegate = self
         
-        seconds.text = "\(quantity)"
-        minutes.text = "\(quantity)"
-        hours.text = "\(quantity)"
-        days.text = "\(quantity)"
-        weeks.text = "\(quantity)"
-        months.text = "\(quantity)"
-        years.text = "\(quantity)"
-        decades.text = "\(quantity)"
-        centurys.text = "\(quantity)"
+        seconds.text = "Seconds"
+        minutes.text = "Minutes"
+        hours.text = "Hours"
+        days.text = "Days"
+        weeks.text = "Weeks"
+        months.text = "Months"
+        years.text = "Years"
+        decades.text = "Decades"
+        centurys.text = "Centurys"
     }
     
 }
